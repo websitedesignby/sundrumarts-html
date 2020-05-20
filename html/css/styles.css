@@ -1125,14 +1125,14 @@ h3.section-head {
 }
 
 img.section-large-image {
-	border: 30px solid #fff;
+	border: 15px solid #fff;
 	width: 100%;
 	max-width: 1024px
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:768px) {
 	img.section-large-image {
-		border: 105px solid #fff
+		border: 30px solid #fff
 	}
 }
 
@@ -1312,9 +1312,9 @@ footer p {
         font-size: 28px;
     }
 }
-@media only screen and (max-width: 768px){
-    
-}
+
 @media( min-width: 1200px ){
     .small-icon-with-title .title{ padding: 40px 0 0px 115px; 
 }
+
+article{ position: relative; }
