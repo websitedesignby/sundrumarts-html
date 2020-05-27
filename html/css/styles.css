@@ -1324,7 +1324,7 @@ article{ position: relative; }
 .col-header{ font-family: "Helvetica Neue LT W05 65 Medium"; font-size: 26px; }
 .grid-x{ width: 100%; }
 .grid-x:after{ content: " "; display: table; clear: both; }
-@media( min-width: 960px ){
+@media( min-width: 920px ){
     .grid-x .col-4{ float: left; width: 33.33333333%; }
     .grid-x .col-content{ padding: .5rem; }
 }
