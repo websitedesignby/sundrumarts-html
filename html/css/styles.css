@@ -1270,6 +1270,7 @@ footer p {
 	}
 }
 
+/*
 .inside-pages ul li {
 	font-size: 33px;
 	margin: 0;
@@ -1288,6 +1289,7 @@ footer p {
 		font-size: 18px
 	}
 }
+*/
 
 .inside-pages .section-icon-small {
 	margin-right: 30px
@@ -1298,14 +1300,11 @@ footer p {
 
 .float-left{ float: left; }
 
-
 /* --- small-icon-with-title --- */
 
 .small-icon-with-title{ position: relative; }
 .small-icon-with-title .title{ position: absolute; height: 70px; vertical-align: middle; width: 100%; top: 0; left: 0; padding: 0 0 0px 70px; }
-.small-icon-with-title h3.section-head {
-    font-size: 18px;
-}
+.small-icon-with-title h3.section-head { font-size: 18px; }
 @media( min-width: 768px ){
     .small-icon-with-title .title{ padding: 30px 0 0px 115px; }
     .small-icon-with-title h3.section-head {
@@ -1314,7 +1313,18 @@ footer p {
 }
 
 @media( min-width: 1200px ){
-    .small-icon-with-title .title{ padding: 40px 0 0px 115px; 
+    .small-icon-with-title .title{ padding: 40px 0 0px 115px; }
 }
 
 article{ position: relative; }
+
+/* --- Mobile First Grid --- */
+
+.col-image{ margin: 0 0 1rem 0; }
+.col-header{ font-family: "Helvetica Neue LT W05 65 Medium"; font-size: 26px; }
+.grid-x{ width: 100%; }
+.grid-x:after{ content: " "; display: table; clear: both; }
+@media( min-width: 960px ){
+    .grid-x .col-4{ float: left; width: 33.33333333%; }
+    .grid-x .col-content{ padding: .5rem; }
+}
